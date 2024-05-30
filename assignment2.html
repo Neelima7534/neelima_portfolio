@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Assignment2</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Additional CSS to center images */
+            .image.main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0;
+            }
+            .image.main img {
+                max-width: 75%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <div class="inner">
+
+                            <!-- Logo -->
+                                <a href="index.html" class="logo">
+                                    <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Datavisualization</span>
+                                </a>
+
+                            <!-- Nav -->
+                                <nav>
+                                    <ul>
+                                        <li><a href="#menu">Menu</a></li>
+                                    </ul>
+                                </nav>
+
+                        </div>
+                    </header>
+
+                <!-- Menu -->
+                    <nav id="menu">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="generic.html">Assignment1</a></li>
+                            <li><a href="assignment2.html">Assignment2</a></li>
+                            <li><a href="generic.html">Consequat dolor</a></li>
+                            <li><a href="elements.html">Elements</a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Main -->
+                    <div id="main">
+                        <div class="inner">
+                            <h1>Assignment1</h1>
+                            <p>This dataset appears to contain information on life expectancy and health expenditure for various countries in the year 2021. Each row represents a different country and includes data on life expectancy (in years) and health expenditure (in some form of currency, likely in scientific notation due to the large values). The dataset likely serves as a valuable resource for analyzing the relationship between healthcare spending and life expectancy across different nations.</p>
+                            <h2>LineChart</h2>
+                            <span class="image main"><img src="images/Port_2.png" alt="" /></span>
+                            <p>For the bar chart showing the average house price by the number of bedrooms. Firstly, the choice of color was crucial in maintaining visual appeal and readability. Opting for a light blue hue ('skyblue') for the bars while contrasting effectively with the black edgecolor. Additionally, to facilitate easy interpretation of price data, the y-axis labels were formatted using the thousands_formatter function, presenting values in thousands and thus streamlining comprehension. Clear and descriptive titles ('Average House Price by Number of Bedrooms') and axis labels ('Number of Bedrooms' for x-axis and 'Average Price' for y-axis) were included to provide context and guide viewers in understanding the chart's content. Overall, these decisions collectively aimed to create a visually appealing and informative visualization that effectively communicates the relationship between the number of bedrooms and average house prices.</p>
+                            
+                            <h2>Geo</h2>
+                            <span class="image main"><img src="images/good2.jpg" alt="" /></span>
+                            <p>The provided Vega-Lite code generates a map visualization that displays countries shaded based on their average health expenditure. Here's a breakdown of the components:
+
+                                Map Layer: The first layer uses geospatial data from a JSON file containing world country borders. Each country shape is represented by a geoshape mark. The countries are filled with light gray color and have white borders.
+                                
+                                Circle Mark Layer: The second layer adds circular marks on the map to represent data points for specific countries. Each circle's position is determined by the latitude and longitude coordinates provided in the data. The size of the circle is fixed at 175 units, and the color of each circle is determined by the country's average health expenditure, with a color scale ranging from gold to red (goldred scheme).
+                                
+                                Text Mark Layer: The third layer overlays text labels on the map to indicate the names of the countries. The position of each label is determined by the latitude and longitude coordinates. The text displayed is a combination of the country name and its corresponding average health expenditure value in parentheses.
+                            </p>
+                            
+                            
+                            
+                        </div>
+                    </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <div class="inner">
+                            <section>
+                                <h2>Get in touch</h2>
+                                <form method="post" action="#">
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div class="field half">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                        <div class="field">
+                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send" class="primary" /></li>
+                                    </ul>
+                                </form>
+                            </section>
+                            <section>
+                                <h2>Follow</h2>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                    <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                                </ul>
+                            </section>
+                            <ul class="copyright">
+                                <li>&copy; Neelima Thondapu</li>
+                            </ul>
+                        </div>
+                    </footer>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
