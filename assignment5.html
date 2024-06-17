@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Assignment2</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Additional CSS to center images */
+            .image.main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0;
+            }
+            .image.main img {
+                max-width: 60%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <div class="inner">
+
+                            <!-- Logo -->
+                                <a href="index.html" class="logo">
+                                    <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Datavisualization</span>
+                                </a>
+
+                            <!-- Nav -->
+                                <nav>
+                                    <ul>
+                                        <li><a href="#menu">Menu</a></li>
+                                    </ul>
+                                </nav>
+
+                        </div>
+                    </header>
+
+                <!-- Menu -->
+                    <nav id="menu">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="generic.html">Assignment1</a></li>
+                            <li><a href="assignment2.html">Assignment2</a></li>
+                            <li><a href="assignment3.html">Assignment3</a></li>
+                            <li><a href="assignment4.html">Assignment4</a></li>
+                            <li><a href="assignment5.html">Assignment5</a></li>
+                            <li><a href="elements.html">Elements</a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Main -->
+                    <div id="main">
+                        <div class="inner">
+                            <h1>Assignment 5</h1>
+                            <h3>Tutorial for Neo4j</h3>
+                            <p>Neo4j is a native graph database that leverages data relationships as first-class entities. It's widely used for applications such as social networks, recommendation engines, and fraud detection.</p>
+                            <p>We'll learn how to set up Neo4j, load data, and create visualizations using Cypher queries and the Neo4j Browser.</p>
+                            <h2>Prerequisites</h2>
+                            <h4>Installing Neo4j</h4>
+                            <p><h5>Software Requirements:</h5> Neo4j requires Java 11 or later. OpenJDK and Oracle JDK are both supported.</p>
+                            <p><h5>1.Download Neo4j:</h5> Go to the Neo4j download page and download the appropriate version for your operating system.</p>
+                            <span class="image main"><img src="images/Download_starting_1.jpg" alt="" /></span>
+                            <p>After Clicking the desktop, the click the highted one(Deployed Center).</p>
+                            <span class="image main"><img src="images/download_starting_2.jpg" alt="" /></span>
+                            <p>Select your dropdown(Windows,Mac,Linux)</p>
+                            <span class="image main"><img src="images/Neo4j_desktop.jpg" alt="" /></span>
+                            <p><h5>2.Install Neo4j:</h5> You can see the page,where we should fill then only it start's downloading.</p>
+                            <span class="image main"><img src="images/download_desktop.jpg" alt="" /></span>
+                            <p>It generates the Activate Key, Copy the key (copy to notepad)</p>
+                            <span class="image main"><img src="images/activation_key.jpg" alt="" /></span>
+                            <p><h5>3.Run Neo4j:</h5> Start the Neo4j server.</p>
+                            <p>It ask to choose the sever, After that it ask the activation_key.</p>
+                            <span class="image main"><img src="images/getting_ready.jpg" alt="" /></span>
+                            <P>It will open the desktop after all Prerequisites completed</P>
+                            <h2>Access Neo4j</h2>
+                            <p>We get the page with a example.</p>
+                            <span class="image main"><img src="images/first_page.jpg" alt="" /></span>
+                            <p>Here, I am click "+ New" and taking smaple project(recommendation)</p>
+                            <span class="image main"><img src="images/smaple_project.jpg" alt="" /></span>
+                            <p>It will install, after that it asks to create the password. After creating it will open other website for project.</p>
+                            <span class="image main"><img src="images/otherscreen.jpg" alt="" /></span>
+                            <p><h5>Understand the data:</h5> ncludes node labels such as Actor, Director, Genre, Movie, Person, and User, and relationship types like ACTED_IN, DIRECTED, IN_GENRE, and RATED.</p>
+                            <span class="image main"><img src="images/node_labels.jpg" alt="" /></span>
+                            <p><h5>Explore the data:</h5> Before creating visualizations, let's explore the data with some basic Cypher queries.</p>
+                            <span class="image main"><img src="images/explore_data.jpg" alt="" /></span>
+                            <h2>Graph Visualizations</h2>
+                            <p><h5> Create Visualizations:</h5> Let's create some visualizations using the Neo4j Browser.</p>
+                            <p>It shows the relationships of nodes.</p>
+                            <span class="image main"><img src="images/first_visualization.jpg" alt="" /></span>
+                            <p><h5>Actors and Their Movies:</h5> This query will return a visualization showing actors and the movies they have acted in. Customize the visualization:</p>
+                            <span class="image main"><img src="images/cipher_3.jpg" alt="" /></span>
+                            <p><h5>Movies and Their Genres:</h5> This will visualize movies and their genres.</p>
+                            <span class="image main"><img src="images/cipher_4.jpg" alt="" /></span>
+                            <p><h5>Movies Rated by Users:</h5> This query will show users and the movies they have rated, along with the rating values.</p>
+                            <span class="image main"><img src="images/cipher_5.jpg" alt="" /></span>
+                            <h2>Customize Visualizations</h2>
+                            <p>Click on Overview or (>), there we can change node colors, node sizes, relationships colors.</p>
+                            <p><h5>For example:</h5> This query returns a graph of actors, the movies they acted in, and the directors of those movies. Customize the visualization.</p>
+                            <p><h5>1.Node Colors:</h5>Different colors for Actor, Movie, and Director.</p>
+                            <p><h5>2.Node Sizes:</h5>Based on the number of relationships.</p>
+                            <p><h5>3.Relationships Colors:</h5>Different colors for ACTED_IN and DIRECTED.</p>
+                            <span class="image main"><img src="images/cipher_6.jpg" alt="" /></span>
+                            <h2>Export and Share Visualizations</h2>
+                            <p><h5>Export as Image:</h5> Click the dowload icon to export the visualization as a PNG image or SVG.</p>
+                            <h2>Conclusion</h2>
+                            <P>By following these steps, We can create insightful visualizations of our data using Neo4j. Neo4j's powerful query language and visualization tools make it easy to explore complex relationships in our data.</P>
+
+
+                        </div>
+                    </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <div class="inner">
+                            <section>
+                                <h2>Get in touch</h2>
+                                <form method="post" action="#">
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div class="field half">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                        <div class="field">
+                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send" class="primary" /></li>
+                                    </ul>
+                                </form>
+                            </section>
+                            <section>
+                                <h2>Follow</h2>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                    <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                                </ul>
+                            </section>
+                            <ul class="copyright">
+                                <li>&copy; Neelima Thondapu</li>
+                            </ul>
+                        </div>
+                    </footer>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
