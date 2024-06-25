@@ -20,8 +20,23 @@
                 margin: 20px 0;
             }
             .image.main img {
-                max-width: 75%;
+                max-width: 100%;
                 height: auto;
+            }
+        </style>
+        <style>
+            .container{
+                display: flex;
+                justify-content: space-around;
+
+            }
+            .container img{
+                width :90%;
+                height :auto;
+            }
+            .text {
+                font-size: 20px;
+                padding-left: 30px;
             }
         </style>
     </head>
@@ -66,24 +81,28 @@
                 <!-- Main -->
                     <div id="main">
                         <div class="inner">
-                            <h1>Assignment1</h1>
-                            <p>This dataset appears to contain information on life expectancy and health expenditure for various countries in the year 2021. Each row represents a different country and includes data on life expectancy (in years) and health expenditure (in some form of currency, likely in scientific notation due to the large values). The dataset likely serves as a valuable resource for analyzing the relationship between healthcare spending and life expectancy across different nations.</p>
-                            <h2>LineChart</h2>
-                            <span class="image main"><img src="images/Port_2.png" alt="" /></span>
-                            <p>For the bar chart showing the average house price by the number of bedrooms. Firstly, the choice of color was crucial in maintaining visual appeal and readability. Opting for a light blue hue ('skyblue') for the bars while contrasting effectively with the black edgecolor. Additionally, to facilitate easy interpretation of price data, the y-axis labels were formatted using the thousands_formatter function, presenting values in thousands and thus streamlining comprehension. Clear and descriptive titles ('Average House Price by Number of Bedrooms') and axis labels ('Number of Bedrooms' for x-axis and 'Average Price' for y-axis) were included to provide context and guide viewers in understanding the chart's content. Overall, these decisions collectively aimed to create a visually appealing and informative visualization that effectively communicates the relationship between the number of bedrooms and average house prices.</p>
-                            
-                            <h2>Geo</h2>
-                            <span class="image main"><img src="images/good2.jpg" alt="" /></span>
-                            <p>The provided Vega-Lite code generates a map visualization that displays countries shaded based on their average health expenditure. Here's a breakdown of the components:
+                            <h3>Air Quality Monitoring in Michigan Universities.</h3>
+                            <div class="container">
+                                <div class="container">
+                                  <img src="images/Air_1">
+                                </div>
+                                <div class="text">
+                                  <p> <h6>Air quality is a critical aspect of environmental health, impacting both human well-being and the ecosystem.</h6> </p>
+                                </div>
+                              </div>
+                            <p>Poor air quality, characterized by high levels of pollutants like particulate matter, nitrogen dioxide, and ozone, can lead to serious health issues including respiratory infections, heart disease, stroke, and lung cancer. Beyond health, air quality also affects the environment by contributing to acid rain, harming wildlife, damaging forests, and deteriorating bodies of water. It can also exacerbate climate change by increasing the concentration of greenhouse gases in the atmosphere. Therefore, monitoring and improving air quality is crucial for safeguarding public health, protecting the environment, and ensuring a sustainable future for all living organisms.
 
-                                Map Layer: The first layer uses geospatial data from a JSON file containing world country borders. Each country shape is represented by a geoshape mark. The countries are filled with light gray color and have white borders.
-                                
-                                Circle Mark Layer: The second layer adds circular marks on the map to represent data points for specific countries. Each circle's position is determined by the latitude and longitude coordinates provided in the data. The size of the circle is fixed at 175 units, and the color of each circle is determined by the country's average health expenditure, with a color scale ranging from gold to red (goldred scheme).
-                                
-                                Text Mark Layer: The third layer overlays text labels on the map to indicate the names of the countries. The position of each label is determined by the latitude and longitude coordinates. The text displayed is a combination of the country name and its corresponding average health expenditure value in parentheses.
                             </p>
                             
-                            
+                            <iframe width="1200" height="950" src="https://lookerstudio.google.com/embed/reporting/a8c53866-e2c9-4529-bb6b-a90750add0f8/page/zy63D" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+                            <p>As we observe from the line graph, the air quality levels at CMU, UMICH, and EMU show a noticeable increases as the day goes. These institutions should evaluate the necessary precautions and actions to mitigate potential health risks associated with deteriorating air quality.
+                            </p>
+                            <p>In the bar graph, we can see that carbohydrate levels are high across all universities. This indicates that these institutions should implement precautions and strategies to address and manage this issue effectively.</p>
+                            <p>The dominant pollutants are PM10, PM2.5, and O3. Particulate matter (PM) can be toxic to humans, primarily affecting the airways and lungs. It can cause various cardiovascular and respiratory issues, such as increased rates of myocardial infarction, ischemia, arrhythmia, deep vein thrombosis, and stroke. Additionally, PM can trigger oxidative stress and impair cell function.</p>
+                            <iframe width="1200" height="950" src="https://lookerstudio.google.com/embed/reporting/a8c53866-e2c9-4529-bb6b-a90750add0f8/page/p_nbjbiapjid" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+                            <p>If someone has any  respiratory issues, they will receive recommendations to help them take necessary precautions and manage their health, ensuring they get the support they need to maintain their condition. This will be especially beneficial for athletes and individuals with lung or heart diseases, as the recommendations will already be tailored to address their specific needs.
+                            </p>
                             
                         </div>
                     </div>
